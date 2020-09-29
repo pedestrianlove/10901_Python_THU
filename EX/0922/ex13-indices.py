@@ -10,7 +10,7 @@ print (str1.rfind ('l'))
 
 # negative indicies
 print ("Python")
-#print ("Python" [-1], "Python" [-4], "Python" [-5, -2])
+print ("Python" [-1], "Python" [-4], "Python" [-5 : -2])
 
 str1 = "spam & eggs"
 print (str1 [-2])

@@ -8,17 +8,22 @@ print ("the summation value of the list num: ", sum (num))
 print ("the count of number 29: ", num.count (29))
 print ("the first index of number 29: ", num.index (29))
 
-print ("the reversed number list", num.reverse ())
-print ("append 9487 to num list: ", num.append (9487))
-print ("extend [94, 87] to num list: ", num.extend ([94, 87]))
+num.reverse ()
+print ("the reversed number list", num)
+num.append (9487)
+print ("append 9487 to num list: ", num)
+num.extend ([94, 87])
+print ("extend [94, 87] to num list: ", num)
 
-
-print ("remove 9 from num list: ", num.remove (9))
-print ("insert 2, 484 to num list: ", num.insert (2, 484))
+num.remove (9)
+print ("remove 9 from num list: ", num)
+num.insert (2, 484)
+print ("insert 2, 484 to num list: ", num)
 
 print ("new num list: ", num + [0] * 3)
 
-print ("clear num list: ", num.clear ())
+num.clear ()
+print ("cleared num list: ", num)
 
 del num
 print ("list num is now deleted.")

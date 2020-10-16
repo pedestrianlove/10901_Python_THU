@@ -8,18 +8,17 @@ class underline:
 # input
 loan = eval (input ("Enter amount of loan: " + underline.start))
 print (underline.end, end = '')
-rate = eval (input ("Enter interest rate (%): " + underline.start))
+rate = float (input ("Enter interest rate (%): " + underline.start))
 print (underline.end, end = '')
 years = eval (input ("Enter number of years: " + underline.start))
 print (underline.end, end = '')
 
 # process
 var_i = (float) (rate / 1200)
-divident = var_i * loan
-print ("divident: ", divident)
-divider = 1 - (1 + var_i**(-12*years) )
-print ("divider: ", divider)
+dividend = var_i
+power = (float) ((1+var_i)**(-12*years))
+divisor = 1 - power
 
 
 # output
-print ("Monthly payment: ", "${:,.2f}".format (divident / divider))
+print ("Monthly payment: ", "${:,.2f}".format (loan*(dividend / divisor)))

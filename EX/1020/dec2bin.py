@@ -5,9 +5,7 @@ def dec2bin_integer (num):
 
 def dec2bin_float (floating):
 	counter = 1
-	while True :
-		if counter > 15:
-			break;
+	while counter <= 15 :
 		if floating >= 0.5**counter:
 			floating -= 0.5**counter
 			print (1, end='')

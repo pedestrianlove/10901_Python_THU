@@ -3,19 +3,16 @@ class underline:
     start = '\033[04m'
     end = '\033[0m'
 
-
-# open file
-fp = open ("70.input", "r")
-
+# variables
 counter = 0
-for ball in iter (fp):
-	counter += 1
-	if ('R' in ball and 'e' in ball and 'd' in ball):
-		break
-
-# close file
-fp.close ()
-
+try:
+	while (True):
+		counter += 1
+		ball = input ()
+		if ('R' in ball and 'e' in ball and 'd' in ball):
+			break
+except EOFError:
+	pass
 
 # output
 print ("The red ball was first drawn in turn {:d}.".format (counter))	

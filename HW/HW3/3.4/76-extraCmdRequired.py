@@ -6,15 +6,14 @@ class underline:
 # variables
 states = []
 
-# open file
-fp = open ("76.input", "r")
 
 # input
-for state in iter (fp) :
-	states.append ( state )
-# close file
-fp.close ()
+try:
+	while (True):
+		states.append ( input () )
 
+except EOFError:
+	pass
 
 # process
 states.sort ()

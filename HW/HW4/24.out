@@ -1,0 +1,12 @@
+Enter a quotation: You miss 100% of the shots you never take. -- Wayne Gretsky
+MENU
+ 1. Count number of vowels in the quotation.
+ 2. Count number of uppercase letters in the quotation.
+Select 1 or 2 from menu: 1
+Number of vowels: 15
+Enter a quotation: You miss 100% of the shots you never take. -- Wayne Gretsky
+MENU
+ 1. Count number of vowels in the quotation.
+ 2. Count number of uppercase letters in the quotation.
+Select 1 or 2 from menu: 2
+Number of uppercase letters 3

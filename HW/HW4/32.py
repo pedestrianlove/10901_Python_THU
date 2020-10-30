@@ -5,6 +5,7 @@ class underline :
 # store person method
 class rMonth :
 	months = []
+	r_months = []
 	def __init__ (self):
 		fp = open ("32.input", "r")
 		for month in iter (fp):
@@ -13,11 +14,11 @@ class rMonth :
 
 	def purify (self):
 		for month in self.months :
-			if not ('r' in month or 'R' in month):
-				self.months.remove (month)
+			if 'r' in month or 'R' in month:
+				self.r_months.append (month)
 	def display (self):
 		print ("The R months are: ")
-		print (", ".join (self.months))
+		print (", ".join (self.r_months))
 
 
 # driver code

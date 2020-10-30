@@ -10,12 +10,15 @@ def getN () :
 	print (underline.end, end='')
 	if (N >= 0):
 		return int (N)
+	else :
+		print ("Input error, please input again.")	
 
 def fact (number) :
-	if (number <= 1) :
-		return 1
-	else :
-	 	return number * fact (number - 1)
+	count = 1
+	while (number >= 1):
+		count *= number
+		number -= 1
+	return count
 
 
 # Flow control && Output

@@ -1,8 +1,12 @@
 def count_occur (string, substr):
 	counter = 0
-	for i in range (0, len (string)-1):
+	i = 0
+	while (i < len (string)):
 		if (string[ i : i+len (substr) ] == substr):
 			counter += 1
+			i += len (substr) 
+		else :
+			i += 1
 	return counter
 
 ## input

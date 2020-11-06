@@ -11,7 +11,7 @@ def input1 () :
 
 def compute (annual_roi, monthly_pay, beg_balance):
 	monthly_roi = (float)(annual_roi / 12)
-	interest_paid = monthly_roi * beg_balance
+	interest_paid = (0.01*monthly_roi) * beg_balance
 	reduction = monthly_pay - interest_paid
 	end_balance = beg_balance - reduction
 	return interest_paid, reduction, end_balance

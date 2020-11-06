@@ -2,7 +2,7 @@
 countries = []
 
 # read file
-fp = open ("Country.txt", 'r')
+fp = open ("Countries.txt", 'r')
 for line in iter (fp):
 	countries.append (line)
 fp.close ()

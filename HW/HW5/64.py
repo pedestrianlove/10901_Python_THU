@@ -2,7 +2,7 @@
 countries = []
 
 # read file
-fp = open ("Country.txt", 'r')
+fp = open ("Countries.txt", 'r')
 for line in iter (fp):
 	countries.append (line)
 fp.close ()
@@ -13,5 +13,4 @@ countries.sort (key = len, reverse = True)
 
 
 # output country
-for i in range (6):
-	print (countries[i])
+print ("\n".join (countries[:]))

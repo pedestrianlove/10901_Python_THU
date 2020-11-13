@@ -9,7 +9,7 @@ def factorial (n):
 	return summation
 	
 def isPrime (n):
-	if ((factorial (n - 1) - 1) % n == 0):
+	if ((factorial (n - 1) + 1) % n == 0):
 		return True
 	return False
 

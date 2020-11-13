@@ -13,4 +13,4 @@ countries.sort (key = len, reverse = True)
 
 
 # output country
-print ("\n".join (countries[:]))
+print ("\n".join (countries[:6]))

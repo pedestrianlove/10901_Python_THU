@@ -14,7 +14,7 @@ class ITEM:
 		print ("Description: " + self.item_name)
 		print ("Year of purchase: {:d}".format (self.purchased_year))
 		print ("Cost: ${:,.2f}".format (self.item_cost))
-		print ("Estimated life: {:d} yeras".format (self.estimatedLife))
+		print ("Estimated life: {:d} years".format (self.estimatedLife))
 		print ("Method of depreciation: " + self.method)
 
 	def output_chart (self):

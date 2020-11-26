@@ -1,4 +1,10 @@
+from _utils import outputFile as of
 import os
+# Preprocessing
+of.clean ()
+print ("Note that all output to file is dumped in 'OUTPUT.txt' with append mode for convenience.")
+print ()
+
 
 # 24
 print ("24.")
@@ -115,12 +121,12 @@ def NoRMonth (fileName):
 		if 'r' in month:
 			Rmonth.add (month)
 	print (Rmonth)
+	of.write (40, Rmonth)
 	
 ## driver code for 40
 print ("40.")
 fileName = os.path.join ("bin", "SomeMonths.txt")
 NoRMonth (fileName)
-print ("Note that we did not write to the file for future convenience.")
 print ()
 
 
@@ -141,12 +147,12 @@ def NoVowelName (fileName):
 		if name[0].lower () in 'aeiou':
 			vowelName.add (name)
 	print (vowelName)
+	of.write (42, vowelName)
 	
 ## driver code for 42
 print ("42.")
 fileName = os.path.join ("bin", "SomePlayers.txt")
 NoVowelName (fileName)
-print ("Note that we did not write to the file for future convenience.")
 print ()
 
 
@@ -162,6 +168,7 @@ def presidentState (fileName):
 	print (state_set)
 	stateFile.close ()
 	print ("Hence, we can know that there are {:d} different states which produced presidents of the United States.".format (len (state_set)))
+	of.write (44, state_set)
 
 ## driver code for 44
 print ("44.")
@@ -186,9 +193,15 @@ def nameInsert (fileName):
 	print ("The set is now:")
 	name_set_sorted = sorted (name_set)
 	print (name_set_sorted, "\nTotal length: ", len (name_set_sorted))
+	return name_set_sorted
 
 ## driver code for 46
 print ("46.")
 fileName = os.path.join ("bin", "Names.txt")
-nameInsert (fileName)
+of.write (46, nameInsert (fileName))
 print ()
+
+
+print ()
+print ()
+print ("All changes make to the file (if any) are dumped into 'OUTPUT.txt'.")

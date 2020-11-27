@@ -33,7 +33,7 @@ print ()
 
 # 28
 def fetchLastName (list1):
-	return set ([fullname.split ()[-1] for fullname in list1])
+	return {fullname.split ()[-1] for fullname in list1}
 
 ## driver code for 28
 print ("28.")
@@ -121,7 +121,7 @@ def NoRMonth (fileName):
 		if 'r' in month:
 			Rmonth.add (month)
 	print (Rmonth)
-	of.write (40, Rmonth)
+	of.write (40, Rmonth, fileName)
 	
 ## driver code for 40
 print ("40.")
@@ -147,7 +147,7 @@ def NoVowelName (fileName):
 		if name[0].lower () in 'aeiou':
 			vowelName.add (name)
 	print (vowelName)
-	of.write (42, vowelName)
+	of.write (42, vowelName, fileName)
 	
 ## driver code for 42
 print ("42.")
@@ -168,7 +168,7 @@ def presidentState (fileName):
 	print (state_set)
 	stateFile.close ()
 	print ("Hence, we can know that there are {:d} different states which produced presidents of the United States.".format (len (state_set)))
-	of.write (44, state_set)
+	of.write (44, state_set, fileName)
 
 ## driver code for 44
 print ("44.")
@@ -198,10 +198,9 @@ def nameInsert (fileName):
 ## driver code for 46
 print ("46.")
 fileName = os.path.join ("bin", "Names.txt")
-of.write (46, nameInsert (fileName))
+of.write (46, nameInsert (fileName), fileName)
 print ()
 
 
 print ()
 print ()
-print ("All changes make to the file (if any) are dumped into 'OUTPUT.txt'.")

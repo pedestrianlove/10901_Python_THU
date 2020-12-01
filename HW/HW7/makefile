@@ -1,2 +1,2 @@
 build:
-	cp ~/CODE/TutorialMD/Python/HW/HW7/bin/*.txt bin/
+	cp -r bin_bk bin

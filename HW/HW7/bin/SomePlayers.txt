@@ -1,7 +1,4 @@
-42.
-Andres Iniesta
-Alexis Sanchez
-Eden Hazard
-Arjen Robben
-
-
+Andres Iniesta 
+Eden Hazard 
+Alexis Sanchez  
+Arjen Robben 

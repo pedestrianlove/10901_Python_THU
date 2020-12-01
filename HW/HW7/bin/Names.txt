@@ -1,4 +1,3 @@
-46.
 Alan
 Alfred
 Allen
@@ -43,7 +42,6 @@ Ione
 Jack
 Jane
 Janice
-Jave
 Jean
 Jeff
 Jenny
@@ -99,5 +97,3 @@ Wesley
 William
 Xavier
 Zane
-
-

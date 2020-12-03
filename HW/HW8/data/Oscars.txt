@@ -45,7 +45,7 @@ The French Connection,crime
 The Godfather,crime
 The Sting,comedy
 The Godfather Part II,crime
-One Flew Over the Cuckoo’s Nest,drama
+One Flew Over the Cuckoos Nest,drama
 Rocky,sports
 Annie Hall,comedy
 The Deer Hunter,war

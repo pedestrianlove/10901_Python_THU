@@ -94,3 +94,22 @@ print ()
 
 
 # 22
+print ("5.2 - 22.")
+## INPUT
+target = eval (input ("Enter year from 1928-2013: "))
+fileName = os.path.join ("..", "data", "Oscars.txt")
+infile = open (fileName, 'r')
+yr = 1927
+for line in iter (infile):
+	yr += 1
+	if (yr == target):
+		print ("Best Film: " + line.split (',')[0])
+		print ("Genre: " + line.split (',')[1])
+		break;
+print ()
+print ()
+
+
+
+
+

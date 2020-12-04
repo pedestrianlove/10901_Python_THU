@@ -1,5 +1,25 @@
 import os
 
+# 8
+print ("5.2 - 8.")
+## INPUT
+fileName = os.path.join ("..", "data", "DOW.txt")
+infile = open (fileName, 'r')
+DOW = [line.strip ().split (',') for line in infile]
+## PROCESS
+DOW.sort (key = lambda x: (eval (x[5]) - eval (x[4]))/ eval (x[4]))
+## OUTPUT
+print ("Best performing stock: ", DOW[-1][0], (eval(DOW[-1][5]) - eval (DOW[-1][4])) / eval (DOW[-1][4]) * 100, '%')
+print ("Worst performing stock: ", DOW[0][0], (eval(DOW[0][5]) - eval (DOW[0][4])) / eval (DOW[0][4]) * 100, '%')
+print ()
+print ()
+
+# 10
+print ("5.2 - 10.")
+print ()
+print ()
+
+
 
 # 12
 print ("5.2 - 12.")
@@ -99,6 +119,7 @@ print ("5.2 - 22.")
 target = eval (input ("Enter year from 1928-2013: "))
 fileName = os.path.join ("..", "data", "Oscars.txt")
 infile = open (fileName, 'r')
+## OUTPUT
 yr = 1927
 for line in iter (infile):
 	yr += 1
@@ -112,4 +133,37 @@ print ()
 
 
 
+#24
+print ("5.2 - 24.")
+## INPUT
+inFileName = os.path.join ("..", "data", "Cowboy.txt")
+infile = open (inFileName, 'r')
+equipment = [line.rstrip ().split (',') for line in iter (infile)]
+infile.close ()
+## PROCESS
+for item in equipment:
+	if item[0] == 'Saddle':
+		item[1] = str (eval (item[1]) * .8)
+		break
+## OUTPUT
+outFileName = os.path.join ("..", "data", "Cowboy2.txt")
+outfile = open (outFileName, 'w')
+for eq in equipment:
+	outfile.write (','.join (eq) + '\n')
+outfile.close ()
+print ("Output saved to '" + outFileName + "'.")
+print ()
+print ()
 
+
+
+
+# 26
+print ("5.2 - 26.")
+outFileName = os.path.join ("..", "data", "Cowboy.txt")
+outfile = open (outFileName, 'a')
+outfile.write ('Winchester Rifle,20.50\n')
+outfile.close ()
+print ("Output saved to '" + outFileName + "'.")
+print ()
+print ()

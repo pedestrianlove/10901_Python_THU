@@ -1,1 +1,0 @@
-from stateCapitalData import CapitalNState 

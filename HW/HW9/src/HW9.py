@@ -104,6 +104,7 @@ for i in range (100000):
 	for i in range (4):
 		if sample[i] + 1 == sample[i+1]:
 			consec_count += 1
+			break
 print ("{:.3f}% of the time there were at least two consecutive numbers in the set of five numbers.".format (consec_count / 1000))
 print ()
 print ()

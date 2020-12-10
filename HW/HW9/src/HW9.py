@@ -58,7 +58,7 @@ print ()
 print ("14 (Dice):")
 targetSum = 0
 for i in range (100000):
-	if random.randint (1, 7) + random.randint (1, 7) == 7:
+	if random.randint (1, 6) + random.randint (1, 6) == 7:
 		targetSum += 1
 print ("The probability of appearance of sum of 7 is approximately {:.3f}%".format (targetSum / 1000))
 print ()

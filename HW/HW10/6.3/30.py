@@ -1,7 +1,7 @@
 import turtle
 
 # title
-turtle.title ("26.py")
+turtle.title ("30.py")
 pen = turtle.Turtle ()
 
 class point:
@@ -46,28 +46,32 @@ def drawRectangle (pants, center, lengths, color, filled = 0):
 		pants.end_fill ()
 	pants.hideturtle ()
 	
+def drawBar (pants, center, lengths, color, filled = 0):
+	move (pants, center.x, center.y)
+	
+	if (filled == 1):
+		pants.begin_fill ()
+	pants.color ("black")
+	#pants.pensize (3)
+	pants.goto (center.x + lengths.w, center.y)
+	pants.goto (center.x + lengths.w, center.y + lengths.h)
+	pants.goto (center.x, center.y + lengths.h)
+	pants.goto (center.x, center.y)
+	pants.color (color)
+	if (filled == 1):
+		pants.end_fill ()
+	pants.hideturtle ()
+
+def drawLineChart (pen, )
 
 
+# data list
+val = [[[1978, 59], [1988, 74], [1998, 73], [2008, 77]], [[1978, 60], [1988, 43], [1998, 44], [2008, 51]]]
+desc = ["well off financially", "meaningful philosophy of life"]
 # driver code
-orig = length (200, 300)
-center = point (0, 0)
-pen.pensize (2)
-drawRectangle (pen, center, orig, "black", filled=0)
-orig.h, orig.w = 100, 150
-pen.pensize (1)
-center.x, center.y = center.x - orig.w/2, center.y - orig.h/2
-drawRectangle (pen, center, orig, "black", filled=1)
-center.x, center.y = center.x + orig.w, center.y + orig.h
-drawRectangle (pen, center, orig, "red", filled=1)
-center.x, center.y = center.x - orig.w - 20, center.y
-drawStar (pen, center, orig, "black", filled=1)
-move (pen, center.x + 20, center.y - 6.5)
-pen.dot (15, "black")
-center.x, center.y = center.x + orig.w , center.y - orig.h
-drawStar (pen, center, 30, "red", filled=1)
-move (pen, center.x + 20, center.y - 6.5)
-pen.dot (15, "red")
 
+for i in range (2):
+	# draw line
 
 
 

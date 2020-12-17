@@ -2,7 +2,7 @@ import turtle
 
 
 # title
-turtle.title ("14.py")
+turtle.title ("10.py")
 
 # draw 1 square and 1 dot centered at (0, 0)
 turtle.penup ()

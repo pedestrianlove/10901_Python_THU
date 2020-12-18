@@ -10,8 +10,10 @@ turtle.goto (25, 55)
 turtle.pendown ()
 
 # draw a line from (25, 55) to (80, 40)
+turtle.dot (5)
 turtle.color ("purple")
 turtle.goto (80, 40)
+turtle.dot (5)
 turtle.hideturtle ()
 
 # pause

@@ -5,12 +5,12 @@ class Register:
 
 	def collect (self):
 		kind = input ("Enter type of vehicle (car/truck): ")
-		number = eval (input ("Number of vehicles: "))
-		if (kind == "car"):
-			self._moneyCollected += number * 1
-		elif (kind == "truck"):
-			self._moneyCollected += number * 2
 		self._carPassed += 1
+		print ("Number of vehicles: {:d}".format (self._carPassed))
+		if (kind == "car"):
+			self._moneyCollected += 1
+		elif (kind == "truck"):
+			self._moneyCollected += 2
 		print (self)
 	
 	def check (self):

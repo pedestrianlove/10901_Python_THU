@@ -4,7 +4,7 @@ class SavingsAccount:
 		print ("D = Deposit, W = Withdrawal, Q = Quit")
 		self._balance = 0
 
-	def makeDeposit (self, money):
+	def makeDeposit (self):
 		money = eval (input ("Enter amount to deposit: "))
 		self._balance += money
 		print (self)
@@ -24,4 +24,11 @@ class SavingsAccount:
 # driver code
 account = SavingsAccount ()
 while (True):
-	control = input ()
+	control = input ("Enter D, W, or Q: ")
+	if (control == "D"):
+		account.makeDeposit ()
+	elif (control == "W"):
+		account.makeWithdrawal ()
+	elif (control == "Q"):
+		break
+print ("End of transactions. Have a good day " + account._name + ".")

@@ -11,8 +11,8 @@ def invest ():
 	output_text.set ("${:,.2f}".format (val))
 
 # init window
-width = 600
-height = 400
+width = 800
+height = 600
 window = tk.Tk ()
 window.title ('Investment')
 window.geometry ('{}x{}'.format (width, height))
@@ -63,9 +63,10 @@ computeBtn.grid (column=3, row=1)
 
 
 # read only text and its description
-font["size"] = 18
-desc = tk.Label (window, text="Amount after 5 years: ")
+font["size"] = 12
+desc = tk.Label (window, font = font, text="Amount after 5 years: ")
 desc.grid (row=2, column=1)
+font["size"] = 18
 output_text = tk.StringVar ()
 output = tk.Entry (window, font=font, textvariable=output_text, state=tk.DISABLED)
 output.grid (row=2, column=2, padx=10, pady=10)

@@ -42,17 +42,17 @@ nation_list.grid (column = 0, row = 0)
 scrollbar = tk.Scrollbar (window)
 nation_list.config (yscrollcommand = scrollbar.set)
 scrollbar.config (command = nation_list.yview)
-scrollbar.grid (column = 1, row = 0)
+scrollbar.grid (column = 1, row = 0, sticky=tk.N+tk.S)
 
 def make_output (window, font, text_str, rowsy):
 	font["size"] = 12
 	desc = tk.Label (window, font = font, text=text_str)
-	desc.grid (row=rowsy, column=2)
+	desc.grid (row=rowsy, column=2, sticky=tk.S)
 
 	font["size"] = 18
 	output_text = tk.StringVar ()
 	output_output = tk.Entry (window, font=font, textvariable=output_text, state=tk.DISABLED)
-	output_output.grid (row=rowsy, column=3, padx=10, pady=10)
+	output_output.grid (row=rowsy, column=3, padx=10, pady=10, sticky=tk.S)
 	return output_text
 
 
